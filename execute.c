@@ -37,7 +37,7 @@ int execute(char *content, stack_t **stack, unsigned int count, FILE *file)
 	while (opst[i].opcode && op)
 	{
 		if (strcmp(op, opst[i].opcode) == 0)
-		{	opst[i].f(stack, counter);
+		{	opst[i].f(stack, count);
 			return (0);
 		}
 		i++;
